@@ -69,18 +69,27 @@ int main(int argc, char const *argv[])
     // //输出
     // output(ls);
 
-    cout<<"-----------二维------------"<<endl;
-    //4.二维vector排序
-    vector<vector<int>> ls2={{2,6},{1,5},{6,4},{5,8}};
-    cout<<"排序前："<<endl;
-    output2(ls2);
-    sort(ls2.begin(),ls2.end());
-    cout<<"按第一个关键字排序后："<<endl;
-    output2(ls2);
+    // cout<<"-----------二维------------"<<endl;
+    // //4.二维vector排序
+    // vector<vector<int>> ls2={{2,6},{1,5},{6,4},{5,8}};
+    // cout<<"排序前："<<endl;
+    // output2(ls2);
+    // sort(ls2.begin(),ls2.end());
+    // cout<<"按第一个关键字排序后："<<endl;
+    // output2(ls2);
 
-    sort(ls2.begin(),ls2.end(),cmp);
-    cout<<"按第二个关键字排序后："<<endl;
-    output2(ls2);
+    // sort(ls2.begin(),ls2.end(),cmp);
+    // cout<<"按第二个关键字排序后："<<endl;
+    // output2(ls2);
+
+    //5. back()、front():返回vector的最后一个元素和第一个元素
+    vector<int> nums = {1, 2, 3, 4, 5};
+    output(nums);
+    int first_val=nums.front();
+    int back_val=nums.back();
+
+    cout<<"first_val:"<<first_val<<endl;
+    cout<<"back_val:"<<back_val<<endl;
 
 
 
