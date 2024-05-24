@@ -91,6 +91,13 @@ int main(int argc, char const *argv[])
     cout<<"first_val:"<<first_val<<endl;
     cout<<"back_val:"<<back_val<<endl;
 
+    //6. resize(n,val)：n<原来数组长度则扩容，初始值为val；n<原长度则保留前n个元素
+    vector<int> nums2 = {3, 2, 3, 4, 5};
+    output(nums2);
+    nums2.resize(7,1);
+    cout<<"nums2.resize(7,1):"<<endl;
+    output(nums2);
+
 
 
 
